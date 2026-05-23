@@ -42,30 +42,33 @@ public class BaseClass {
         if (browser.equalsIgnoreCase("edge")) {
 
             WebDriverManager.edgedriver().setup();
-//            EdgeOptions edgeOptions = new EdgeOptions();
-//            edgeOptions.addArguments("--headless=new");
-//            edgeOptions.addArguments("--window-size=1920,1080");
-//            edgeOptions.addArguments("--disable-gpu");
-//            edgeOptions.addArguments("--no-sandbox");
-//            edgeOptions.addArguments("--disable-dev-shm-usage");
-//            driver.set(new EdgeDriver(edgeOptions));
-            driver.set(new EdgeDriver());
+            EdgeOptions edgeOptions = new EdgeOptions();
+            edgeOptions.addArguments("--headless=new");
+            edgeOptions.addArguments("--remote-allow-origins=*");
+            edgeOptions.addArguments("--disable-extensions");
+            edgeOptions.addArguments("--window-size=1920,1080");
+            edgeOptions.addArguments("--disable-gpu");
+            edgeOptions.addArguments("--no-sandbox");
+            edgeOptions.addArguments("--disable-dev-shm-usage");
+            driver.set(new EdgeDriver(edgeOptions));
+//            driver.set(new EdgeDriver());
 
         } else {
 
             WebDriverManager.chromedriver().setup();
-//            ChromeOptions chromeOptions = new ChromeOptions();
-//            chromeOptions.addArguments("--headless=new"); 
-//            chromeOptions.addArguments("--window-size=1920,1080");
-//            chromeOptions.addArguments("--disable-gpu");
-//            chromeOptions.addArguments("--no-sandbox");           
-//            chromeOptions.addArguments("--disable-dev-shm-usage");
-//            driver.set(new ChromeDriver(chromeOptions));
-            driver.set(new ChromeDriver());
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless=new"); 
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            chromeOptions.addArguments("--disable-extensions");
+            chromeOptions.addArguments("--window-size=1920,1080");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--no-sandbox");           
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            driver.set(new ChromeDriver(chromeOptions));
+//            driver.set(new ChromeDriver());
         }
 
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        getDriver().manage().window().maximize();
         getDriver().get("https://tutorialsninja.com/demo/");
     }
 

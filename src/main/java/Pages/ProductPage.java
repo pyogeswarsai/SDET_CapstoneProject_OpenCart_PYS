@@ -23,30 +23,19 @@ public class ProductPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-//	@FindBy(name = "search") WebElement searchBox;
-//	@FindBy(xpath = "(//button[@type='button'])[4]") WebElement searchBtn;
-	
 	@FindBy(linkText = "iMac") WebElement vProductResult1;
 	@FindBy(linkText = "iPhone") WebElement vProductResult2;
 	
 	@FindBy(xpath = "//p[contains(text(),'no product')]") WebElement checkProductResult;
-	
-//	@FindBy(partialLinkText = "HP") WebElement checkoutProduct;
-	
+
 	public void enterSearchBox(String product) {
-		WebElement searchBox = wait.until(
-	            ExpectedConditions.visibilityOfElementLocated(By.name("search"))
-	        );
-	        searchBox.clear();
+		WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("search")));
+	    searchBox.clear();
 		searchBox.sendKeys(product);
 		System.out.println(product + " name send to check box");
 	}
 	public void clickSearchBtn() {
-		WebElement searchBtn = wait.until(
-	            ExpectedConditions.elementToBeClickable(
-	                By.cssSelector("button[type='button'].btn-default")
-	            )
-	        );
+		WebElement searchBtn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[type='button'].btn-default")));
 		searchBtn.click();
 		System.out.println("Clicked search button");
 	}
@@ -63,9 +52,7 @@ public class ProductPage {
         return prodName;
 	}
 	public void checkProductResults() {
-		WebElement msg = wait.until(
-	            ExpectedConditions.visibilityOf(checkProductResult)
-	        );
+		WebElement msg = wait.until(ExpectedConditions.visibilityOf(checkProductResult));
 		boolean isNoProductMsgDisplayed = msg.isDisplayed();
 		Assert.assertTrue(isNoProductMsgDisplayed, "Products displayed");
 		if(isNoProductMsgDisplayed) {
@@ -77,11 +64,7 @@ public class ProductPage {
 	}
 	
 	public void clickCheckoutProduct() {
-		WebElement hp = wait.until(
-	            ExpectedConditions.elementToBeClickable(
-	                By.partialLinkText("HP")
-	            )
-	        );
+		WebElement hp = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("HP")));
 	        hp.click();
 	}
 }

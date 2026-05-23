@@ -32,10 +32,6 @@ public class CartPage {
 	@FindBy(xpath = "//button[@type = 'submit' and @data-original-title='Update']") WebElement updateQuantityBtn;
 	
 	@FindBy(xpath = "//button[@type = 'button' and @data-toggle='tooltip']") WebElement removeProduct;
-	
-//	@FindBy(xpath = "(//td[contains(text(),'244')])[4]") WebElement updatedPriceCheck;
-//	@FindBy(xpath = "//input[@value = '2']") WebElement updatedQuantityCheck;
-	
 	@FindBy(xpath = "//input[@type='text' and @size='1']") WebElement quantityInputAfterUpdate;
 	
 	public void clickAddToCartBtn() {
@@ -43,13 +39,9 @@ public class CartPage {
 		System.out.println("Add to cart button clicked");
 	}
 	public void selectCartOption() {
-		 WebElement cart = wait.until(
-			        ExpectedConditions.elementToBeClickable(
-			            By.xpath("//span[contains(text(),'Shopping Cart')]")
-			        )
-			    );
-			    cart.click();
-			    System.out.println("Selected shopping cart option");
+		WebElement cart = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Shopping Cart')]")));
+		cart.click();
+		System.out.println("Selected shopping cart option");
 	}
 	public void updateProdQuantity() {
 		wait.until(ExpectedConditions.visibilityOf(prodQuantityUpdate));
@@ -67,21 +59,7 @@ public class CartPage {
 		removeProduct.click();
 		System.out.println("Clicked remove product button");
 	}
-//	public void updatedPriceQuantityCheck() {
-//		boolean isUpdatedPriceDisplayed = updatedPriceCheck.isDisplayed();
-//		Assert.assertTrue(isUpdatedPriceDisplayed, "not updated");
-//		if(isUpdatedPriceDisplayed)
-//			System.out.println("Price updated");
-//		
-//		boolean isUpdatedQuantityDisplayed = updatedQuantityCheck.isDisplayed();
-//		Assert.assertTrue(isUpdatedQuantityDisplayed, "not updated");
-//		if(isUpdatedQuantityDisplayed)
-//			System.out.println("Quantity updated");
-//	}
 	public void updatedPriceQuantityCheck() {
-        // Wait for the page to re-render after AJAX update before asserting
-        // FIXED: removed hardcoded price "244" — price changes on demo site
-        // We verify quantity updated to "2" which is reliable and meaningful
         wait.until(ExpectedConditions.attributeToBe(
             By.xpath("//input[@type='text' and @size='1']"), "value", "2"
         ));
@@ -104,20 +82,10 @@ public class CartPage {
 		if(isSuccessMsgDisplayed)
 			System.out.println("Product Added to cart, success message displayed");
 	}
-//	public void checkCartEmptyMsg() {
-//		boolean isEmptyDisplayed = cartEmptyMsg.isDisplayed();
-//		Assert.assertTrue(isEmptyDisplayed, "No message displayed");
-//		if(isEmptyDisplayed) {
-//			System.out.println("Cart Empty Message displayed");
-//		}
-//	}
 	public void checkCartEmptyMsg() {
-        // Wait for empty cart message to appear after AJAX removal re-render
+
         WebElement emptyMsg = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("(//p[contains(text(),'cart is empty')])[2]")
-            )
-        );
+            ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[contains(text(),'cart is empty')])[2]")));
         boolean isEmptyDisplayed = emptyMsg.isDisplayed();
         Assert.assertTrue(isEmptyDisplayed, "Cart empty message not displayed");
         if (isEmptyDisplayed)
@@ -125,17 +93,17 @@ public class CartPage {
     }
 	public void clearCartIfNotEmpty() {
 	    try {
-	        // If a remove button exists, click all of them
+
 	        java.util.List<WebElement> removeButtons = driver.findElements(
 	            By.xpath("//button[@type='button' and @data-toggle='tooltip']")
 	        );
 	        for (WebElement btn : removeButtons) {
 	            wait.until(ExpectedConditions.elementToBeClickable(btn)).click();
-	            // Small pause for AJAX to settle between removals
+
 	            Thread.sleep(500);
 	        }
 	    } catch (Exception e) {
-	        // Cart was already empty — nothing to do
+
 	    }
 	}
 }
