@@ -1,0 +1,8 @@
+StepDefinitions\LogoutSteps.class
+StepDefinitions\CartSteps.class
+StepDefinitions\RegistrationSteps.class
+StepDefinitions\CheckoutSteps.class
+Hooks\OpenCartHooks.class
+StepDefinitions\LoginSteps.class
+Runners\OpenCartRunner.class
+StepDefinitions\ProductSteps.class

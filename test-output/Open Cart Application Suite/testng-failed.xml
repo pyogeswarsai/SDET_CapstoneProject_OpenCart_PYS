@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Application Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Open Cart Application Test(failed)">
+    <classes>
+      <class name="Runners.OpenCartRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="8 10 12 15"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runners.OpenCartRunner -->
+    </classes>
+  </test> <!-- Open Cart Application Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Application Suite] -->

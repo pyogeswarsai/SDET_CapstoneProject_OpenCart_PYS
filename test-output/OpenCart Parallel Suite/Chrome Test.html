@@ -1,0 +1,505 @@
+<html>
+<head>
+<title>TestNG:  Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat May 23 07:28:06 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>144 seconds (144267 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart", "Open Cart cart Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Add to Cart&apos;)]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f0135d584bece56d2914cd563e22ba5f, findElement {value=//button[contains(text(),&apos;Add to Cart&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55316}, goog:processID: 22892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55316/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0135d584bece56d2914cd563e22ba5f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.clickAddToCartBtn(CartPage.java:32)
+	at StepDefinitions.CartSteps.user_selected_add_to_cart_button_and_verify_product_added_to_cart(CartSteps.java:45)
+	at ✽.User selected Add to cart button and verify product added to cart(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1497479649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497479649'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Add to Cart&apos;)]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f0135d584bece56d2914cd563e22ba5f, findElement {value=//button[contains(text(),&apos;Add to Cart&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55316}, goog:processID: 22892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55316/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0135d584bece56d2914cd563e22ba5f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.clickAddToCartBtn(CartPage.java:32)
+	at StepDefinitions.CartSteps.user_selected_add_to_cart_button_and_verify_product_added_to_cart(CartSteps.java:45)
+	at ✽.User selected Add to cart button and verify product added to cart(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:7)
+</pre></div></td>
+<td>17</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product with empty field", "Open Cart Product Module"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [094d07c26c281d3cd85b7cc913f671d6, clickElement {id=f.05522F81723BCE11A99C4D1A19A659C4.d.7E0EBE5284059477BF5E60A14C2EE7DA.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54061}, goog:processID: 30352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54061/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (094d07c26c281d3cd85b7cc913f671d6)] -&gt; xpath: (//button[@type=&apos;button&apos;])[4]]
+Session ID: 094d07c26c281d3cd85b7cc913f671d6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.ProductPage.clickSearchBtn(ProductPage.java:31)
+	at StepDefinitions.ProductSteps.user_click_search_button_with_empty_filed(ProductSteps.java:94)
+	at ✽.User click search button with empty filed(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Product.feature:23)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace79330906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace79330906'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [094d07c26c281d3cd85b7cc913f671d6, clickElement {id=f.05522F81723BCE11A99C4D1A19A659C4.d.7E0EBE5284059477BF5E60A14C2EE7DA.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54061}, goog:processID: 30352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54061/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (094d07c26c281d3cd85b7cc913f671d6)] -&gt; xpath: (//button[@type=&apos;button&apos;])[4]]
+Session ID: 094d07c26c281d3cd85b7cc913f671d6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.ProductPage.clickSearchBtn(ProductPage.java:31)
+	at StepDefinitions.ProductSteps.user_click_search_button_with_empty_filed(ProductSteps.java:94)
+	at ✽.User click search button with empty filed(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Product.feature:23)
+</pre></div></td>
+<td>2</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using valid keyword", "Open Cart Product Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;iMac&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b42f09c63ed51b2e663a21ab0554dbdf, findElement {value=iMac, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64282}, goog:processID: 31556, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64282/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b42f09c63ed51b2e663a21ab0554dbdf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at Pages.ProductPage.checkProductResult1(ProductPage.java:35)
+	at StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(ProductSteps.java:38)
+	at ✽.User redirect to product results page and verify user got the related &quot;iMac&quot;(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Product.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1988180784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988180784'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;iMac&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b42f09c63ed51b2e663a21ab0554dbdf, findElement {value=iMac, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64282}, goog:processID: 31556, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64282/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b42f09c63ed51b2e663a21ab0554dbdf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at Pages.ProductPage.checkProductResult1(ProductPage.java:35)
+	at StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(ProductSteps.java:38)
+	at ✽.User redirect to product results page and verify user got the related &quot;iMac&quot;(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Product.feature:6)
+</pre></div></td>
+<td>14</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove product from cart", "Open Cart cart Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type = &apos;button&apos; and @data-toggle=&apos;tooltip&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97ec559e50ada229f4ef1b0a2c970663, findElement {value=//button[@type = &apos;button&apos; and @data-toggle=&apos;tooltip&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, goog:processID: 11376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97ec559e50ada229f4ef1b0a2c970663
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.clickRemoveProduct(CartPage.java:50)
+	at StepDefinitions.CartSteps.user_remove_product_from_cart(CartSteps.java:100)
+	at ✽.User remove product from cart(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace950137891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace950137891'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type = &apos;button&apos; and @data-toggle=&apos;tooltip&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97ec559e50ada229f4ef1b0a2c970663, findElement {value=//button[@type = &apos;button&apos; and @data-toggle=&apos;tooltip&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, goog:processID: 11376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97ec559e50ada229f4ef1b0a2c970663
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.clickRemoveProduct(CartPage.java:50)
+	at StepDefinitions.CartSteps.user_remove_product_from_cart(CartSteps.java:100)
+	at ✽.User remove product from cart(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:18)
+</pre></div></td>
+<td>14</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register user with valid Details", "Open Cart Registration Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Congratulations&apos;)]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8fa267fcdbb351dd4e4dcec648d81971, findElement {value=//p[contains(text(),&apos;Congratulations&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64719}, goog:processID: 2964, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64719/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fa267fcdbb351dd4e4dcec648d81971
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.RegistrationPage.checkSuccessAccountCreation(RegistrationPage.java:87)
+	at StepDefinitions.RegistrationSteps.user_successfully_registered_and_verify_successful_account_creation(RegistrationSteps.java:64)
+	at ✽.User successfully registered and verify successful account creation(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Registration.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2114906091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114906091'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Congratulations&apos;)]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8fa267fcdbb351dd4e4dcec648d81971, findElement {value=//p[contains(text(),&apos;Congratulations&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64719}, goog:processID: 2964, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64719/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fa267fcdbb351dd4e4dcec648d81971
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.RegistrationPage.checkSuccessAccountCreation(RegistrationPage.java:87)
+	at StepDefinitions.RegistrationSteps.user_successfully_registered_and_verify_successful_account_creation(RegistrationSteps.java:64)
+	at ✽.User successfully registered and verify successful account creation(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Registration.feature:12)
+</pre></div></td>
+<td>16</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update product quantity", "Open Cart cart Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value = &apos;1&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd7373157049853167cc8f82b9d7802, findElement {value=//input[@value = &apos;1&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57425}, goog:processID: 21928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfd7373157049853167cc8f82b9d7802
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.updateProdQuantity(CartPage.java:40)
+	at StepDefinitions.CartSteps.user_updates_the_quantity_of_product(CartSteps.java:70)
+	at ✽.User updates the quantity of product(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace955039426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955039426'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value = &apos;1&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfd7373157049853167cc8f82b9d7802, findElement {value=//input[@value = &apos;1&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57425}, goog:processID: 21928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfd7373157049853167cc8f82b9d7802
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at Pages.CartPage.updateProdQuantity(CartPage.java:40)
+	at StepDefinitions.CartSteps.user_updates_the_quantity_of_product(CartSteps.java:70)
+	at ✽.User updates the quantity of product(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Cart.feature:12)
+</pre></div></td>
+<td>13</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify password mismatch validation", "Open Cart Registration Module"</td>
+<td></td>
+<td>3</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
+<td></td>
+<td>3</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with blank credentials", "Open Cart Login Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using invalid keyword", "Open Cart Product Module"</td>
+<td></td>
+<td>12</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email and password", "Open Cart Login Module"</td>
+<td></td>
+<td>3</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify empty cart message", "Open Cart cart Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify logout functionality", "Open Cart Logout Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
+<td></td>
+<td>2</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using valid keyword", "Open Cart Product Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using invalid keyword", "Open Cart Product Module"</td>
+<td></td>
+<td>5</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Registration page", "Open Cart Registration Module"</td>
+<td></td>
+<td>1</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mandatory field validation messages", "Open Cart Registration Module"</td>
+<td></td>
+<td>3</td>
+<td>Runners.OpenCartRunner@2f465398</td></tr>
+</table><p>
+</body>
+</html>
