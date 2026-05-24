@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="201.97" tests="42" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="139.742" tests="42" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\YOGESWAR\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.11\bin"/>
-    <property name="sun.java.command" value="C:\Users\YOGESWAR\AppData\Local\Temp\surefire8434743256101288080\surefirebooter-20260523150119709_3.jar C:\Users\YOGESWAR\AppData\Local\Temp\surefire8434743256101288080 2026-05-23T15-01-19_478-jvmRun1 surefire-20260523150119709_1tmp surefire_0-20260523150119709_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\YOGESWAR\AppData\Local\Temp\surefire16312531601241059710\surefirebooter-20260524123504474_3.jar C:\Users\YOGESWAR\AppData\Local\Temp\surefire16312531601241059710 2026-05-24T12-35-04_290-jvmRun1 surefire-20260524123504474_1tmp surefire_0-20260524123504474_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\YOGESWAR\OneDrive\Desktop\SDET_Capstone_Project\Capstone_Project_OpenCart\CapstoneOpenCartProject\target\test-classes;C:\Users\YOGESWAR\OneDrive\Desktop\SDET_Capstone_Project\Capstone_Project_OpenCart\CapstoneOpenCartProject\target\classes;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-java\4.44.0\selenium-java-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.44.0\selenium-chrome-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.44.0\selenium-chromium-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.44.0\selenium-devtools-v146-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.44.0\selenium-devtools-v147-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.44.0\selenium-devtools-v148-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.44.0\selenium-edge-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.44.0\selenium-firefox-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.44.0\selenium-ie-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\YOGESWAR\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\YOGESWAR\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\YOGESWAR\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\YOGESWAR\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.44.0\selenium-safari-driver-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\YOGESWAR\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\YOGESWAR\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\YOGESWAR\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\YOGESWAR\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\YOGESWAR\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\YOGESWAR\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\YOGESWAR\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\YOGESWAR\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\YOGESWAR\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\YOGESWAR\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\YOGESWAR\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\YOGESWAR\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\YOGESWAR\.m2\repository\io\cucumber\cucumber-testng\7.34.3\cucumber-testng-7.34.3.jar;C:\Users\YOGESWAR\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\YOGESWAR\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\YOGESWAR\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\plugins\maven-dependency-plugin\3.10.0\maven-dependency-plugin-3.10.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-sink-api\2.0.0\doxia-sink-api-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\reporting\maven-reporting-api\4.0.0\maven-reporting-api-4.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\4.0.0\maven-reporting-impl-4.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-site-model\2.0.0\doxia-site-model-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-core\2.0.0\doxia-core-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-integration-tools\2.0.0\doxia-integration-tools-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.27\plexus-interpolation-1.27.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\2.0.0\doxia-site-renderer-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-skin-model\2.0.0\doxia-skin-model-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\2.0.0\doxia-module-xhtml5-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-velocity\2.2.0\plexus-velocity-2.2.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-module-apt\2.0.0\doxia-module-apt-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\doxia\doxia-module-xdoc\2.0.0\doxia-module-xdoc-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\maven-archiver\3.6.2\maven-archiver-3.6.2.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\YOGESWAR\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.9.0.M3\org.eclipse.sisu.plexus-0.9.0.M3.jar;C:\Users\YOGESWAR\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.9.0.M3\org.eclipse.sisu.inject-0.9.0.M3.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-archiver\4.11.0\plexus-archiver-4.11.0.jar;C:\Users\YOGESWAR\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\YOGESWAR\.m2\repository\org\tukaani\xz\1.11\xz-1.11.jar;C:\Users\YOGESWAR\.m2\repository\com\github\luben\zstd-jni\1.5.7-6\zstd-jni-1.5.7-6.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-utils\4.0.2\plexus-utils-4.0.2.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-xml\3.0.1\plexus-xml-3.0.1.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-io\3.6.0\plexus-io-3.6.0.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-i18n\1.1.0\plexus-i18n-1.1.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\shared\maven-dependency-analyzer\1.17.0\maven-dependency-analyzer-1.17.0.jar;C:\Users\YOGESWAR\.m2\repository\org\ow2\asm\asm\9.9.1\asm-9.9.1.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\shared\maven-dependency-tree\3.3.0\maven-dependency-tree-3.3.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.13.1\maven-artifact-transfer-0.13.1.jar;C:\Users\YOGESWAR\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.0.0\plexus-component-annotations-2.0.0.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.4.2\maven-shared-utils-3.4.2.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.9.25\maven-resolver-util-1.9.25.jar;C:\Users\YOGESWAR\.m2\repository\org\sonatype\plexus\plexus-build-api\0.0.7\plexus-build-api-0.0.7.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\velocity\velocity-engine-core\2.4.1\velocity-engine-core-2.4.1.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\velocity\tools\velocity-tools-generic\3.1\velocity-tools-generic-3.1.jar;C:\Users\YOGESWAR\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\YOGESWAR\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\YOGESWAR\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\YOGESWAR\.m2\repository\org\apache\commons\commons-digester3\3.2\commons-digester3-3.2.jar;C:\Users\YOGESWAR\.m2\repository\com\github\cliftonlabs\json-simple\3.0.2\json-simple-3.0.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,11 +31,11 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\YOGESWAR\AppData\Local\Temp\surefire8434743256101288080\surefirebooter-20260523150119709_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\YOGESWAR\AppData\Local\Temp\surefire16312531601241059710\surefirebooter-20260524123504474_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.11+9-LTS-211"/>
-    <property name="webdriver.edge.driver" value="C:\Users\YOGESWAR\.cache\selenium\msedgedriver\win64\148.0.3967.70\msedgedriver.exe"/>
+    <property name="webdriver.edge.driver" value="C:\Users\YOGESWAR\.cache\selenium\msedgedriver\win64\148.0.3967.83\msedgedriver.exe"/>
     <property name="user.name" value="YOGESWAR"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=";"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;](1)" classname="Runners.OpenCartRunner" time="11.454">
+  <testcase name="runScenario[&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;](1)" classname="Runners.OpenCartRunner" time="7.856">
     <system-out><![CDATA[Browser set: edge | Thread ID: 32
 Browser set: chrome | Thread ID: 31
 
@@ -71,68 +71,68 @@ Scenario: Login with valid email and password                           # src/te
 Launching Browser: chrome | Thread ID: 31
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
+Selected login option
+  ✔ Given User is on hompage and select login option in account tab     # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_account_tab()
+Entered email
+Entered password
 Selected My account tab
 Selected login option
   ✔ Given User is on hompage and select login option in account tab     # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_account_tab()
-Selected login option
-  ✔ Given User is on hompage and select login option in account tab     # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_account_tab()
-Entered email
-Entered email
-Entered password
-Entered password
 Selected login button
   ✔ When User enters valid email and password and click on sign in      # StepDefinitions.LoginSteps.user_enters_valid_email_and_password_and_click_on_sign_in()
 My account setting displayed
-Selected login button
-  ✔ When User enters valid email and password and click on sign in      # StepDefinitions.LoginSteps.user_enters_valid_email_and_password_and_click_on_sign_in()
 My orders setting displayed
   ✔ Then User navigated to users account homepage and verified the page # StepDefinitions.LoginSteps.user_navigated_to_users_account_homepage_and_verified_the_page()
-My account setting displayed
-My orders setting displayed
-  ✔ Then User navigated to users account homepage and verified the page # StepDefinitions.LoginSteps.user_navigated_to_users_account_homepage_and_verified_the_page()
+Entered email
+Entered password
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;](1)" classname="Runners.OpenCartRunner" time="0.137">
-    <system-out><![CDATA[
-Scenario: Login with invalid email and password                                 # src/test/resources/Features/Feature1_Login.feature:14
-Launching Browser: chrome | Thread ID: 31
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](2)" classname="Runners.OpenCartRunner" time="9.02">
+  <testcase name="runScenario[&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;](1)" classname="Runners.OpenCartRunner" time="1.422">
     <system-out><![CDATA[
 Scenario: Login with invalid email and password                                 # src/test/resources/Features/Feature1_Login.feature:14
 Launching Browser: edge | Thread ID: 32
-Selected My account tab
+Selected login button
+  ✔ When User enters valid email and password and click on sign in      # StepDefinitions.LoginSteps.user_enters_valid_email_and_password_and_click_on_sign_in()
+My account setting displayed
+My orders setting displayed
+  ✔ Then User navigated to users account homepage and verified the page # StepDefinitions.LoginSteps.user_navigated_to_users_account_homepage_and_verified_the_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](2)" classname="Runners.OpenCartRunner" time="3.107">
+    <system-out><![CDATA[
+Scenario: Login with invalid email and password                                 # src/test/resources/Features/Feature1_Login.feature:14
+Launching Browser: chrome | Thread ID: 31
 Selected My account tab
 Selected login option
   ✔ Given User is on hompage and select login option in my account tab          # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_account_tab()
+Entered email
+Selected My account tab
+Entered password
 Selected login option
   ✔ Given User is on hompage and select login option in my account tab          # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_account_tab()
 Entered email
-Entered email
 Entered password
-Entered password
+Selected login button
+  ✔ When User enters invalid "yog@gmail.com" and "Yog@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
 Selected login button
   ✔ When User enters invalid "yog@gmail.com" and "Yog@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
 Getting warning message
   ✔ Then User will get the Error message                                        # StepDefinitions.LoginSteps.user_will_get_the_error_message()
-Selected login button
-  ✔ When User enters invalid "yog@gmail.com" and "Yog@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
 Getting warning message
   ✔ Then User will get the Error message                                        # StepDefinitions.LoginSteps.user_will_get_the_error_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](2)" classname="Runners.OpenCartRunner" time="0.241">
+  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](2)" classname="Runners.OpenCartRunner" time="0.016">
     <system-out><![CDATA[
 Scenario: Login with invalid email and password                                     # src/test/resources/Features/Feature1_Login.feature:15
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](3)" classname="Runners.OpenCartRunner" time="7.857">
+  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](3)" classname="Runners.OpenCartRunner" time="3.818">
     <system-out><![CDATA[
 Scenario: Login with invalid email and password                                     # src/test/resources/Features/Feature1_Login.feature:15
 Launching Browser: edge | Thread ID: 32
@@ -140,123 +140,123 @@ Selected My account tab
 Selected My account tab
 Selected login option
   ✔ Given User is on hompage and select login option in my account tab              # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_account_tab()
-Entered email
-Entered password
 Selected login option
   ✔ Given User is on hompage and select login option in my account tab              # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_account_tab()
-Selected login button
-  ✔ When User enters invalid "yoges@gmail.com" and "Yoges@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
 Entered email
-Getting warning message
-  ✔ Then User will get the Error message                                            # StepDefinitions.LoginSteps.user_will_get_the_error_message()
+Entered password
+Entered email
 Entered password
 Selected login button
   ✔ When User enters invalid "yoges@gmail.com" and "Yoges@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
 Getting warning message
   ✔ Then User will get the Error message                                            # StepDefinitions.LoginSteps.user_will_get_the_error_message()
+Selected login button
+  ✔ When User enters invalid "yoges@gmail.com" and "Yoges@123" and click on sign in # StepDefinitions.LoginSteps.user_enters_invalid_and_and_click_on_sign_in(java.lang.String,java.lang.String)
+Getting warning message
+  ✔ Then User will get the Error message                                            # StepDefinitions.LoginSteps.user_will_get_the_error_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](3)" classname="Runners.OpenCartRunner" time="0.031">
+  <testcase name="runScenario[&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;](3)" classname="Runners.OpenCartRunner" time="0.098">
     <system-out><![CDATA[
 Scenario: Login with blank credentials                                  # src/test/resources/Features/Feature1_Login.feature:17
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;](4)" classname="Runners.OpenCartRunner" time="7.049">
+  <testcase name="runScenario[&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;](4)" classname="Runners.OpenCartRunner" time="3.951">
     <system-out><![CDATA[
 Scenario: Login with blank credentials                                  # src/test/resources/Features/Feature1_Login.feature:17
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
-Selected login option
-  ✔ Given User is on hompage and select login option in my accounts tab # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_accounts_tab()
 Selected My account tab
-Selected login button
-  ✔ When User not entered both email and password and click on login    # StepDefinitions.LoginSteps.user_not_entered_both_email_and_password_and_click_on_login()
 Selected login option
   ✔ Given User is on hompage and select login option in my accounts tab # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_accounts_tab()
-Getting warning message
-  ✔ Then User get the error message                                     # StepDefinitions.LoginSteps.user_get_the_error_message()
+Selected login option
+  ✔ Given User is on hompage and select login option in my accounts tab # StepDefinitions.LoginSteps.user_is_on_hompage_and_select_login_option_in_my_accounts_tab()
+Selected login button
+  ✔ When User not entered both email and password and click on login    # StepDefinitions.LoginSteps.user_not_entered_both_email_and_password_and_click_on_login()
 Selected login button
   ✔ When User not entered both email and password and click on login    # StepDefinitions.LoginSteps.user_not_entered_both_email_and_password_and_click_on_login()
 Getting warning message
   ✔ Then User get the error message                                     # StepDefinitions.LoginSteps.user_get_the_error_message()
+Getting warning message
+  ✔ Then User get the error message                                     # StepDefinitions.LoginSteps.user_get_the_error_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;](4)" classname="Runners.OpenCartRunner" time="0.446">
-    <system-out><![CDATA[
-Scenario: Verify navigation to Registration page                                   # src/test/resources/Features/Feature2_Registration.feature:3
-Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;](5)" classname="Runners.OpenCartRunner" time="5.341">
+  <testcase name="runScenario[&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;](4)" classname="Runners.OpenCartRunner" time="0.117">
     <system-out><![CDATA[
 Scenario: Verify navigation to Registration page                                   # src/test/resources/Features/Feature2_Registration.feature:3
 Launching Browser: chrome | Thread ID: 31
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;](5)" classname="Runners.OpenCartRunner" time="2.342">
+    <system-out><![CDATA[
+Scenario: Verify navigation to Registration page                                   # src/test/resources/Features/Feature2_Registration.feature:3
+Launching Browser: edge | Thread ID: 32
 Homepage loaded
   ✔ Given User is on homepage                                                      # StepDefinitions.RegistrationSteps.user_is_on_homepage()
-Selected My account tab
 Homepage loaded
+Selected My account tab
   ✔ Given User is on homepage                                                      # StepDefinitions.RegistrationSteps.user_is_on_homepage()
 Selected My account tab
 Selected Register option
   ✔ When User select Register option in account tab                                # StepDefinitions.RegistrationSteps.user_select_register_option_in_account_tab()
 User Navigated to Registration page
   ✔ Then User navigated to regsiter page and verify registration page is displayed # StepDefinitions.RegistrationSteps.user_navigated_to_regsiter_page_and_verify_registration_page_is_displayed()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;](5)" classname="Runners.OpenCartRunner" time="0.315">
+    <system-out><![CDATA[
+Scenario: Register user with valid Details                                   # src/test/resources/Features/Feature2_Registration.feature:8
+Launching Browser: chrome | Thread ID: 31
 Selected Register option
   ✔ When User select Register option in account tab                                # StepDefinitions.RegistrationSteps.user_select_register_option_in_account_tab()
 User Navigated to Registration page
   ✔ Then User navigated to regsiter page and verify registration page is displayed # StepDefinitions.RegistrationSteps.user_navigated_to_regsiter_page_and_verify_registration_page_is_displayed()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;](5)" classname="Runners.OpenCartRunner" time="0.177">
+  <testcase name="runScenario[&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;](6)" classname="Runners.OpenCartRunner" time="6.42">
     <system-out><![CDATA[
 Scenario: Register user with valid Details                                   # src/test/resources/Features/Feature2_Registration.feature:8
 Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;](6)" classname="Runners.OpenCartRunner" time="7.94">
-    <system-out><![CDATA[
-Scenario: Register user with valid Details                                   # src/test/resources/Features/Feature2_Registration.feature:8
-Launching Browser: chrome | Thread ID: 31
 Selected My account tab
 Selected My account tab
 Selected Register option
   ✔ Given User is on hompage and select register option in account tab       # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_select_register_option_in_account_tab()
 Entered firstname
-Selected Register option
-  ✔ Given User is on hompage and select register option in account tab       # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_select_register_option_in_account_tab()
 Entered lastname
-Entered firstname
 Entered email
-Entered lastname
+Selected Register option
+  ✔ Given User is on hompage and select register option in account tab       # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_select_register_option_in_account_tab()
 Entered mobile no
+Entered firstname
 Entered password
-Entered email
+Entered lastname
 Entered confirm password
   ✔ When User enter all necessary details                                    # StepDefinitions.RegistrationSteps.user_enter_all_necessary_details()
-Entered mobile no
+Entered email
 Clicked privacy policy check box
+Entered mobile no
 Entered password
 Entered confirm password
   ✔ When User enter all necessary details                                    # StepDefinitions.RegistrationSteps.user_enter_all_necessary_details()
 Clicked privacy policy check box
 Clicked continue
   ✔ And Click checkbox and click on continue                                 # StepDefinitions.RegistrationSteps.click_checkbox_and_click_on_continue()
+Clicked continue
+  ✔ And Click checkbox and click on continue                                 # StepDefinitions.RegistrationSteps.click_checkbox_and_click_on_continue()
+Account created successfully
+  ✔ Then User successfully registered and verify successful account creation # StepDefinitions.RegistrationSteps.user_successfully_registered_and_verify_successful_account_creation()
 Account created successfully
   ✔ Then User successfully registered and verify successful account creation # StepDefinitions.RegistrationSteps.user_successfully_registered_and_verify_successful_account_creation()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;](6)" classname="Runners.OpenCartRunner" time="0.591">
+  <testcase name="runScenario[&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;](6)" classname="Runners.OpenCartRunner" time="0.052">
     <system-out><![CDATA[
 Scenario: Register User with existing email                                 # src/test/resources/Features/Feature2_Registration.feature:20
 Launching Browser: chrome | Thread ID: 31
-Clicked continue
-  ✔ And Click checkbox and click on continue                                 # StepDefinitions.RegistrationSteps.click_checkbox_and_click_on_continue()
-Account created successfully
-  ✔ Then User successfully registered and verify successful account creation # StepDefinitions.RegistrationSteps.user_successfully_registered_and_verify_successful_account_creation()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](7)" classname="Runners.OpenCartRunner" time="6.834">
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](7)" classname="Runners.OpenCartRunner" time="4.801">
     <system-out><![CDATA[
 Scenario: Register User with existing email                                 # src/test/resources/Features/Feature2_Registration.feature:20
 Launching Browser: edge | Thread ID: 32
@@ -264,19 +264,19 @@ Selected My account tab
 Selected My account tab
 Selected Register option
   ✔ Given User is on hompage and selected register option in my account tab # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_selected_register_option_in_my_account_tab()
-Entered firstname
 Selected Register option
   ✔ Given User is on hompage and selected register option in my account tab # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_selected_register_option_in_my_account_tab()
-Entered lastname
-Entered email
 Entered firstname
-Entered mobile no
+Entered firstname
+Entered lastname
 Entered lastname
 Entered email
-Entered password
+Entered email
 Entered mobile no
-Entered confirm password
+Entered mobile no
 Entered password
+Entered password
+Entered confirm password
 Entered confirm password
 Clicked privacy policy check box
 Clicked privacy policy check box
@@ -290,20 +290,20 @@ Email Alredy existed message displyed
   ✔ Then Click continue and verify warning message                          # StepDefinitions.RegistrationSteps.click_continue_and_verify_warning_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](7)" classname="Runners.OpenCartRunner" time="0.105">
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](7)" classname="Runners.OpenCartRunner" time="0.085">
     <system-out><![CDATA[
 Scenario: Register User with existing email                                  # src/test/resources/Features/Feature2_Registration.feature:21
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](8)" classname="Runners.OpenCartRunner" time="7.424">
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](8)" classname="Runners.OpenCartRunner" time="3.276">
     <system-out><![CDATA[
 Scenario: Register User with existing email                                  # src/test/resources/Features/Feature2_Registration.feature:21
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
+Selected My account tab
 Selected Register option
   ✔ Given User is on hompage and selected register option in my account tab  # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_selected_register_option_in_my_account_tab()
-Selected My account tab
 Entered firstname
 Entered lastname
 Selected Register option
@@ -311,35 +311,35 @@ Selected Register option
 Entered email
 Entered firstname
 Entered mobile no
-Entered password
 Entered lastname
-Entered confirm password
+Entered password
 Entered email
-Clicked privacy policy check box
+Entered confirm password
 Entered mobile no
+Clicked privacy policy check box
 Entered password
 Entered confirm password
+Clicked continue
+  ✔ When User enters all updated details but used existing "yoges@gmail.com" # StepDefinitions.RegistrationSteps.user_enters_all_updated_details_but_used_existing(java.lang.String)
 Clicked privacy policy check box
 Clicked continue
   ✔ When User enters all updated details but used existing "yoges@gmail.com" # StepDefinitions.RegistrationSteps.user_enters_all_updated_details_but_used_existing(java.lang.String)
 Email Alredy existed message displyed
   ✔ Then Click continue and verify warning message                           # StepDefinitions.RegistrationSteps.click_continue_and_verify_warning_message()
-Clicked continue
-  ✔ When User enters all updated details but used existing "yoges@gmail.com" # StepDefinitions.RegistrationSteps.user_enters_all_updated_details_but_used_existing(java.lang.String)
 Email Alredy existed message displyed
   ✔ Then Click continue and verify warning message                           # StepDefinitions.RegistrationSteps.click_continue_and_verify_warning_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](8)" classname="Runners.OpenCartRunner" time="0.314">
-    <system-out><![CDATA[
-Scenario: Verify mandatory field validation messages                      # src/test/resources/Features/Feature2_Registration.feature:23
-Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;](9)" classname="Runners.OpenCartRunner" time="5.98">
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;](8)" classname="Runners.OpenCartRunner" time="0.066">
     <system-out><![CDATA[
 Scenario: Verify mandatory field validation messages                      # src/test/resources/Features/Feature2_Registration.feature:23
 Launching Browser: chrome | Thread ID: 31
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;](9)" classname="Runners.OpenCartRunner" time="3.748">
+    <system-out><![CDATA[
+Scenario: Verify mandatory field validation messages                      # src/test/resources/Features/Feature2_Registration.feature:23
+Launching Browser: edge | Thread ID: 32
 Selected My account tab
 Selected My account tab
 Selected Register option
@@ -361,20 +361,20 @@ Lastname required error message displayed
 Email required error message displayed
 Email required error message displayed
 Phone no required error message displayed
-Password required error message displayed
-  ✔ Then User gets a warning message                                      # StepDefinitions.RegistrationSteps.user_gets_a_warning_message()
 Phone no required error message displayed
 Password required error message displayed
   ✔ Then User gets a warning message                                      # StepDefinitions.RegistrationSteps.user_gets_a_warning_message()
+Password required error message displayed
+  ✔ Then User gets a warning message                                      # StepDefinitions.RegistrationSteps.user_gets_a_warning_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;](9)" classname="Runners.OpenCartRunner" time="0.171">
+  <testcase name="runScenario[&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;](9)" classname="Runners.OpenCartRunner" time="0.088">
     <system-out><![CDATA[
 Scenario: Verify password mismatch validation                                         # src/test/resources/Features/Feature2_Registration.feature:28
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;](10)" classname="Runners.OpenCartRunner" time="6.969">
+  <testcase name="runScenario[&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;](10)" classname="Runners.OpenCartRunner" time="3.737">
     <system-out><![CDATA[
 Scenario: Verify password mismatch validation                                         # src/test/resources/Features/Feature2_Registration.feature:28
 Launching Browser: edge | Thread ID: 32
@@ -382,9 +382,9 @@ Selected My account tab
 Selected My account tab
 Selected Register option
   ✔ Given User is on hompage and selected register option in my accounts tab          # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_selected_register_option_in_my_accounts_tab()
+Entered firstname
 Selected Register option
   ✔ Given User is on hompage and selected register option in my accounts tab          # StepDefinitions.RegistrationSteps.user_is_on_hompage_and_selected_register_option_in_my_accounts_tab()
-Entered firstname
 Entered lastname
 Entered firstname
 Entered email
@@ -400,68 +400,68 @@ Entered confirm password
 Clicked privacy policy check box
 Clicked continue
   ✔ When User entered all details but used two different passwords and click continue # StepDefinitions.RegistrationSteps.user_entered_all_details_but_used_two_different_passwords_and_click_continue()
-Password mismatch error message displayed
-  ✔ Then User gets the Password mismatch error message and verify                     # StepDefinitions.RegistrationSteps.user_gets_the_password_mismatch_error_message_and_verify()
 Clicked continue
   ✔ When User entered all details but used two different passwords and click continue # StepDefinitions.RegistrationSteps.user_entered_all_details_but_used_two_different_passwords_and_click_continue()
 Password mismatch error message displayed
   ✔ Then User gets the Password mismatch error message and verify                     # StepDefinitions.RegistrationSteps.user_gets_the_password_mismatch_error_message_and_verify()
+Password mismatch error message displayed
+  ✔ Then User gets the Password mismatch error message and verify                     # StepDefinitions.RegistrationSteps.user_gets_the_password_mismatch_error_message_and_verify()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;](10)" classname="Runners.OpenCartRunner" time="0.299">
-    <system-out><![CDATA[
-Scenario: Search Product using valid keyword                                             # src/test/resources/Features/Feature3_Product.feature:9
-Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](11)" classname="Runners.OpenCartRunner" time="7.207">
+  <testcase name="runScenario[&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;](10)" classname="Runners.OpenCartRunner" time="0.114">
     <system-out><![CDATA[
 Scenario: Search Product using valid keyword                                             # src/test/resources/Features/Feature3_Product.feature:9
 Launching Browser: chrome | Thread ID: 31
-Selected My account tab
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](11)" classname="Runners.OpenCartRunner" time="5.018">
+    <system-out><![CDATA[
+Scenario: Search Product using valid keyword                                             # src/test/resources/Features/Feature3_Product.feature:9
+Launching Browser: edge | Thread ID: 32
 Selected My account tab
 Selected login option
+Selected My account tab
 Entered email
 Entered password
+Selected login button
+  ✔ Given User is on hompage and select login option in account tab and login to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_login_to_account()
 Selected login option
 Entered email
 Entered password
 Selected login button
   ✔ Given User is on hompage and select login option in account tab and login to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_login_to_account()
 iMac name send to check box
-Selected login button
-  ✔ Given User is on hompage and select login option in account tab and login to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_login_to_account()
-Clicked search button
-  ✔ When User enters "iMac" name using valid keyword and click search button             # StepDefinitions.ProductSteps.user_enters_name_using_valid_keyword_and_click_search_button(java.lang.String)
 iMac name send to check box
 Clicked search button
   ✔ When User enters "iMac" name using valid keyword and click search button             # StepDefinitions.ProductSteps.user_enters_name_using_valid_keyword_and_click_search_button(java.lang.String)
+Clicked search button
+  ✔ When User enters "iMac" name using valid keyword and click search button             # StepDefinitions.ProductSteps.user_enters_name_using_valid_keyword_and_click_search_button(java.lang.String)
+iMac Products displayed
+  ✔ Then User redirect to product results page and verify user got the related "iMac"    # StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(java.lang.String)
 iMac Products displayed
   ✔ Then User redirect to product results page and verify user got the related "iMac"    # StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](11)" classname="Runners.OpenCartRunner" time="1.3">
+  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](11)" classname="Runners.OpenCartRunner" time="0.239">
     <system-out><![CDATA[
 Scenario: Search Product using valid keyword                                             # src/test/resources/Features/Feature3_Product.feature:10
 Launching Browser: chrome | Thread ID: 31
-iMac Products displayed
-  ✔ Then User redirect to product results page and verify user got the related "iMac"    # StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](12)" classname="Runners.OpenCartRunner" time="9.235">
+  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](12)" classname="Runners.OpenCartRunner" time="5.108">
     <system-out><![CDATA[
 Scenario: Search Product using valid keyword                                             # src/test/resources/Features/Feature3_Product.feature:10
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
+Selected login option
+Entered email
+Entered password
 Selected My account tab
-Selected login option
-Selected login option
-Entered email
-Entered email
-Entered password
-Entered password
 Selected login button
   ✔ Given User is on hompage and select login option in account tab and login to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_login_to_account()
+Selected login option
+Entered email
+Entered password
 Selected login button
   ✔ Given User is on hompage and select login option in account tab and login to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_login_to_account()
 iPhone name send to check box
@@ -476,113 +476,113 @@ iPhone Products displayed
   ✔ Then User redirect to product results page and verify user got the related "iPhone"  # StepDefinitions.ProductSteps.user_redirect_to_product_results_page_and_verify_user_got_the_related(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](12)" classname="Runners.OpenCartRunner" time="0.185">
+  <testcase name="runScenario[&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;](12)" classname="Runners.OpenCartRunner" time="0.178">
     <system-out><![CDATA[
 Scenario: Search Product using invalid keyword                                              # src/test/resources/Features/Feature3_Product.feature:18
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](13)" classname="Runners.OpenCartRunner" time="7.048">
+  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](13)" classname="Runners.OpenCartRunner" time="4.906">
     <system-out><![CDATA[
 Scenario: Search Product using invalid keyword                                              # src/test/resources/Features/Feature3_Product.feature:18
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
+Selected login option
 Selected My account tab
-Selected login option
-Selected login option
-Entered email
 Entered email
 Entered password
+Selected login button
+  ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
+Selected login option
+Entered email
 Entered password
 Selected login button
   ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
 abcd123 name send to check box
-Selected login button
-  ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
+abcd123 name send to check box
 Clicked search button
   ✔ When User enter "abcd123" name using invalid keyword and click search button            # StepDefinitions.ProductSteps.user_enter_name_using_invalid_keyword_and_click_search_button(java.lang.String)
 No related products displayed
   ✔ Then User redirect to product result page and verify user got the related "abcd123"     # StepDefinitions.ProductSteps.user_redirect_to_product_result_page_and_verify_user_got_the_related(java.lang.String)
-abcd123 name send to check box
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](13)" classname="Runners.OpenCartRunner" time="0.697">
-    <system-out><![CDATA[
-Scenario: Search Product using invalid keyword                                              # src/test/resources/Features/Feature3_Product.feature:19
-Launching Browser: chrome | Thread ID: 31
 Clicked search button
   ✔ When User enter "abcd123" name using invalid keyword and click search button            # StepDefinitions.ProductSteps.user_enter_name_using_invalid_keyword_and_click_search_button(java.lang.String)
 No related products displayed
   ✔ Then User redirect to product result page and verify user got the related "abcd123"     # StepDefinitions.ProductSteps.user_redirect_to_product_result_page_and_verify_user_got_the_related(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](14)" classname="Runners.OpenCartRunner" time="18.239">
+  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](13)" classname="Runners.OpenCartRunner" time="0.17">
+    <system-out><![CDATA[
+Scenario: Search Product using invalid keyword                                              # src/test/resources/Features/Feature3_Product.feature:19
+Launching Browser: chrome | Thread ID: 31
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](14)" classname="Runners.OpenCartRunner" time="3.854">
     <system-out><![CDATA[
 Scenario: Search Product using invalid keyword                                              # src/test/resources/Features/Feature3_Product.feature:19
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
+Selected login option
 Selected My account tab
-Selected login option
-Selected login option
-Entered email
 Entered email
 Entered password
+Selected login option
+Selected login button
+  ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
+Entered email
 Entered password
 Selected login button
   ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
+dummy45cc name send to check box
 dummy45cc name send to check box
 Clicked search button
   ✔ When User enter "dummy45cc" name using invalid keyword and click search button          # StepDefinitions.ProductSteps.user_enter_name_using_invalid_keyword_and_click_search_button(java.lang.String)
-Selected login button
-  ✔ Given User is on hompage and select login option in account tab and loggedin to account # StepDefinitions.ProductSteps.user_is_on_hompage_and_select_login_option_in_account_tab_and_loggedin_to_account()
 No related products displayed
   ✔ Then User redirect to product result page and verify user got the related "dummy45cc"   # StepDefinitions.ProductSteps.user_redirect_to_product_result_page_and_verify_user_got_the_related(java.lang.String)
-dummy45cc name send to check box
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](14)" classname="Runners.OpenCartRunner" time="1.597">
-    <system-out><![CDATA[
-Scenario: Search Product with empty field                                      # src/test/resources/Features/Feature3_Product.feature:21
-Launching Browser: chrome | Thread ID: 31
 Clicked search button
   ✔ When User enter "dummy45cc" name using invalid keyword and click search button          # StepDefinitions.ProductSteps.user_enter_name_using_invalid_keyword_and_click_search_button(java.lang.String)
 No related products displayed
   ✔ Then User redirect to product result page and verify user got the related "dummy45cc"   # StepDefinitions.ProductSteps.user_redirect_to_product_result_page_and_verify_user_got_the_related(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;](15)" classname="Runners.OpenCartRunner" time="7.619">
+  <testcase name="runScenario[&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;](14)" classname="Runners.OpenCartRunner" time="0.083">
+    <system-out><![CDATA[
+Scenario: Search Product with empty field                                      # src/test/resources/Features/Feature3_Product.feature:21
+Launching Browser: chrome | Thread ID: 31
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;](15)" classname="Runners.OpenCartRunner" time="3.927">
     <system-out><![CDATA[
 Scenario: Search Product with empty field                                      # src/test/resources/Features/Feature3_Product.feature:21
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
-Selected login option
 Selected My account tab
-Entered email
-Entered password
 Selected login option
 Entered email
+Selected login option
 Entered password
 Selected login button
   ✔ Given User is on home page and selected register option in my accounts tab # StepDefinitions.ProductSteps.user_is_on_home_page_and_selected_register_option_in_my_accounts_tab()
+Entered email
+Entered password
 Selected login button
   ✔ Given User is on home page and selected register option in my accounts tab # StepDefinitions.ProductSteps.user_is_on_home_page_and_selected_register_option_in_my_accounts_tab()
-Clicked search button
-  ✔ When User click search button with empty filed                             # StepDefinitions.ProductSteps.user_click_search_button_with_empty_filed()
 Clicked search button
   ✔ When User click search button with empty filed                             # StepDefinitions.ProductSteps.user_click_search_button_with_empty_filed()
 No related products displayed
   ✔ Then User navigated to page with no products displayed                     # StepDefinitions.ProductSteps.user_navigated_to_page_with_no_products_displayed()
+Clicked search button
+  ✔ When User click search button with empty filed                             # StepDefinitions.ProductSteps.user_click_search_button_with_empty_filed()
 No related products displayed
   ✔ Then User navigated to page with no products displayed                     # StepDefinitions.ProductSteps.user_navigated_to_page_with_no_products_displayed()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;](15)" classname="Runners.OpenCartRunner" time="0.263">
+  <testcase name="runScenario[&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;](15)" classname="Runners.OpenCartRunner" time="0.077">
     <system-out><![CDATA[
 Scenario: Add product to cart                                              # src/test/resources/Features/Feature4_Cart.feature:3
 Launching Browser: chrome | Thread ID: 31
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;](16)" classname="Runners.OpenCartRunner" time="8.736">
+  <testcase name="runScenario[&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;](16)" classname="Runners.OpenCartRunner" time="5.045">
     <system-out><![CDATA[
 Scenario: Add product to cart                                              # src/test/resources/Features/Feature4_Cart.feature:3
 Launching Browser: edge | Thread ID: 32
@@ -590,12 +590,12 @@ Selected My account tab
 Selected My account tab
 Selected login option
 Entered email
-Entered password
 Selected login option
+Entered password
+Entered email
+Entered password
 Selected login button
   ✔ Given User is on homepage and logged into account                      # StepDefinitions.CartSteps.user_is_on_homepage_and_logged_into_account()
-Entered email
-Entered password
 iMac name send to check box
 Selected login button
   ✔ Given User is on homepage and logged into account                      # StepDefinitions.CartSteps.user_is_on_homepage_and_logged_into_account()
@@ -605,54 +605,54 @@ Clicked search button
 Clicked search button
   ✔ When User search for product and get the product results               # StepDefinitions.CartSteps.user_search_for_product_and_get_the_product_results()
   ✔ And User selected the product and navigated to product page            # StepDefinitions.CartSteps.user_selected_the_product_and_navigated_to_product_page()
+Add to cart button clicked
   ✔ And User selected the product and navigated to product page            # StepDefinitions.CartSteps.user_selected_the_product_and_navigated_to_product_page()
-Add to cart button clicked
-Add to cart button clicked
 Product Added to cart, success message displayed
   ✔ Then User selected Add to cart button and verify product added to cart # StepDefinitions.CartSteps.user_selected_add_to_cart_button_and_verify_product_added_to_cart()
-Product Added to cart, success message displayed
-  ✔ Then User selected Add to cart button and verify product added to cart # StepDefinitions.CartSteps.user_selected_add_to_cart_button_and_verify_product_added_to_cart()
+Add to cart button clicked
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;](16)" classname="Runners.OpenCartRunner" time="0.074">
-    <system-out><![CDATA[
-Scenario: Update product quantity                                # src/test/resources/Features/Feature4_Cart.feature:9
-Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;](17)" classname="Runners.OpenCartRunner" time="7.843">
+  <testcase name="runScenario[&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;](16)" classname="Runners.OpenCartRunner" time="0.232">
     <system-out><![CDATA[
 Scenario: Update product quantity                                # src/test/resources/Features/Feature4_Cart.feature:9
 Launching Browser: chrome | Thread ID: 31
-Selected My account tab
+Product Added to cart, success message displayed
+  ✔ Then User selected Add to cart button and verify product added to cart # StepDefinitions.CartSteps.user_selected_add_to_cart_button_and_verify_product_added_to_cart()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;](17)" classname="Runners.OpenCartRunner" time="4.036">
+    <system-out><![CDATA[
+Scenario: Update product quantity                                # src/test/resources/Features/Feature4_Cart.feature:9
+Launching Browser: edge | Thread ID: 32
 Selected My account tab
 Selected login option
-Selected login option
-Entered email
 Entered email
 Entered password
+Selected My account tab
+Selected login button
+  ✔ Given User is on open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_open_cart_homepage_and_logged_in_to_account()
+Selected login option
+Entered email
 Entered password
 Selected login button
   ✔ Given User is on open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_open_cart_homepage_and_logged_in_to_account()
 Selected shopping cart option
   ✔ When User select Shopping cart and navigated to cart page    # StepDefinitions.CartSteps.user_select_shopping_cart_and_navigated_to_cart_page()
-Selected login button
-  ✔ Given User is on open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_open_cart_homepage_and_logged_in_to_account()
 clicked on quanity text box
 cleared existing quantity
 update quantity to 2
+clicked update cart button
+  ✔ And User updates the quantity of product                     # StepDefinitions.CartSteps.user_updates_the_quantity_of_product()
 Selected shopping cart option
   ✔ When User select Shopping cart and navigated to cart page    # StepDefinitions.CartSteps.user_select_shopping_cart_and_navigated_to_cart_page()
 clicked on quanity text box
 cleared existing quantity
-clicked update cart button
-  ✔ And User updates the quantity of product                     # StepDefinitions.CartSteps.user_updates_the_quantity_of_product()
 update quantity to 2
 Quantity successfully updated to: 2
   ✔ Then Verify price changes and quantity updated               # StepDefinitions.CartSteps.verify_price_changes_and_quantity_updated()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;](17)" classname="Runners.OpenCartRunner" time="0.629">
+  <testcase name="runScenario[&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;](17)" classname="Runners.OpenCartRunner" time="0.518">
     <system-out><![CDATA[
 Scenario: Remove product from cart                                    # src/test/resources/Features/Feature4_Cart.feature:15
 Launching Browser: chrome | Thread ID: 31
@@ -662,26 +662,16 @@ Quantity successfully updated to: 2
   ✔ Then Verify price changes and quantity updated               # StepDefinitions.CartSteps.verify_price_changes_and_quantity_updated()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;](18)" classname="Runners.OpenCartRunner" time="8.07">
+  <testcase name="runScenario[&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;](18)" classname="Runners.OpenCartRunner" time="5.423">
     <system-out><![CDATA[
 Scenario: Remove product from cart                                    # src/test/resources/Features/Feature4_Cart.feature:15
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
 Selected login option
-Selected My account tab
-Entered email
-Entered password
-Selected login option
 Entered email
 Entered password
 Selected login button
   ✔ Given User is on demo open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_demo_open_cart_homepage_and_logged_in_to_account()
-Selected shopping cart option
-  ✔ When User click on Shopping cart and navigated to cart page       # StepDefinitions.CartSteps.user_click_on_shopping_cart_and_navigated_to_cart_page()
-Selected login button
-  ✔ Given User is on demo open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_demo_open_cart_homepage_and_logged_in_to_account()
-Clicked remove product button
-  ✔ And User remove product from cart                                 # StepDefinitions.CartSteps.user_remove_product_from_cart()
 Selected shopping cart option
   ✔ When User click on Shopping cart and navigated to cart page       # StepDefinitions.CartSteps.user_click_on_shopping_cart_and_navigated_to_cart_page()
 Clicked remove product button
@@ -690,127 +680,160 @@ Cart empty message displayed
   ✔ Then Verify product removed from cart                             # StepDefinitions.CartSteps.verify_product_removed_from_cart()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;](18)" classname="Runners.OpenCartRunner" time="0.447">
+  <testcase name="runScenario[&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;](18)" classname="Runners.OpenCartRunner" time="4.068">
     <system-out><![CDATA[
 Scenario: Verify empty cart message                               # src/test/resources/Features/Feature4_Cart.feature:21
-Launching Browser: chrome | Thread ID: 31
+Launching Browser: edge | Thread ID: 32
+Selected My account tab
+Selected login option
+Entered email
+Entered password
+Selected login button
+  ✔ Given User is on demo open cart homepage and logged in to account # StepDefinitions.CartSteps.user_is_on_demo_open_cart_homepage_and_logged_in_to_account()
+Selected My account tab
+Selected login option
+Entered email
+Entered password
+Selected login button
+  ✔ Given User is on homepage and log in to account               # StepDefinitions.CartSteps.user_is_on_homepage_and_log_in_to_account()
+Selected shopping cart option
+  ✔ When User click on Shopping cart and navigated to cart page       # StepDefinitions.CartSteps.user_click_on_shopping_cart_and_navigated_to_cart_page()
+Clicked remove product button
+  ✔ And User remove product from cart                                 # StepDefinitions.CartSteps.user_remove_product_from_cart()
+Selected shopping cart option
 Cart empty message displayed
   ✔ Then Verify product removed from cart                             # StepDefinitions.CartSteps.verify_product_removed_from_cart()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;](19)" classname="Runners.OpenCartRunner" time="17.891">
+  <testcase name="runScenario[&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;](19)" classname="Runners.OpenCartRunner" time="10.03">
     <system-out><![CDATA[
 Scenario: Verify empty cart message                               # src/test/resources/Features/Feature4_Cart.feature:21
-Launching Browser: edge | Thread ID: 32
-Selected My account tab
+Launching Browser: chrome | Thread ID: 31
 Selected My account tab
 Selected login option
-Entered email
-Selected login option
-Entered password
 Entered email
 Entered password
 Selected login button
   ✔ Given User is on homepage and log in to account               # StepDefinitions.CartSteps.user_is_on_homepage_and_log_in_to_account()
-Selected login button
-  ✔ Given User is on homepage and log in to account               # StepDefinitions.CartSteps.user_is_on_homepage_and_log_in_to_account()
 Selected shopping cart option
-Selected shopping cart option
-  ✔ When User clicked on Shopping cart and navigated to cart page # StepDefinitions.CartSteps.user_clicked_on_shopping_cart_and_navigated_to_cart_page()
-Cart empty message displayed
-  ✔ Then Verify Cart empty message displayed                      # StepDefinitions.CartSteps.verify_cart_empty_message_displayed()
   ✔ When User clicked on Shopping cart and navigated to cart page # StepDefinitions.CartSteps.user_clicked_on_shopping_cart_and_navigated_to_cart_page()
 Cart empty message displayed
   ✔ Then Verify Cart empty message displayed                      # StepDefinitions.CartSteps.verify_cart_empty_message_displayed()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;](19)" classname="Runners.OpenCartRunner" time="0.077">
+  <testcase name="runScenario[&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;](19)" classname="Runners.OpenCartRunner" time="4.467">
     <system-out><![CDATA[
 Scenario: Verify Checkout functionality                                  # src/test/resources/Features/Feature5_Checkout.feature:3
 Launching Browser: edge | Thread ID: 32
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;](20)" classname="Runners.OpenCartRunner" time="15.969">
-    <system-out><![CDATA[
-Scenario: Verify Checkout functionality                                  # src/test/resources/Features/Feature5_Checkout.feature:3
-Launching Browser: chrome | Thread ID: 31
-Selected My account tab
 Selected My account tab
 Selected login option
-Selected login option
-Entered email
 Entered email
 Entered password
-Entered password
-Selected login button
 Selected login button
 hp name send to check box
-hp name send to check box
-Clicked search button
-  ✔ Given User login to account and search for a product                 # StepDefinitions.CheckoutSteps.user_login_to_account_and_search_for_a_product()
 Clicked search button
   ✔ Given User login to account and search for a product                 # StepDefinitions.CheckoutSteps.user_login_to_account_and_search_for_a_product()
 Add to cart button clicked
   ✔ When User select product and added to cart                           # StepDefinitions.CheckoutSteps.user_select_product_and_added_to_cart()
+  ✔ When User clicked on Shopping cart and navigated to cart page # StepDefinitions.CartSteps.user_clicked_on_shopping_cart_and_navigated_to_cart_page()
+Cart empty message displayed
+  ✔ Then Verify Cart empty message displayed                      # StepDefinitions.CartSteps.verify_cart_empty_message_displayed()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;](20)" classname="Runners.OpenCartRunner" time="6.594">
+    <system-out><![CDATA[
+Scenario: Verify Checkout functionality                                  # src/test/resources/Features/Feature5_Checkout.feature:3
+Launching Browser: chrome | Thread ID: 31
+Selected shopping cart option
+  ✔ And User went to cart page and click on checkout button              # StepDefinitions.CheckoutSteps.user_went_to_cart_page_and_click_on_checkout_button()
+User is on billing details section
+User is on delivery details section
+Selected My account tab
+Selected login option
+Entered email
+Entered password
+Selected login button
+  ✔ And User enters billing details and delivery details                 # StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details()
+User is on billing section
+hp name send to check box
+User is on payment method section
+Clicked search button
+  ✔ Given User login to account and search for a product                 # StepDefinitions.CheckoutSteps.user_login_to_account_and_search_for_a_product()
 Add to cart button clicked
   ✔ When User select product and added to cart                           # StepDefinitions.CheckoutSteps.user_select_product_and_added_to_cart()
 Selected shopping cart option
-Selected shopping cart option
+User is on confirm order section
   ✔ And User went to cart page and click on checkout button              # StepDefinitions.CheckoutSteps.user_went_to_cart_page_and_click_on_checkout_button()
 User is on billing details section
-  ✔ And User went to cart page and click on checkout button              # StepDefinitions.CheckoutSteps.user_went_to_cart_page_and_click_on_checkout_button()
-User is on billing details section
-User is on delivery details section
-User is on delivery details section
-  ✔ And User enters billing details and delivery details                 # StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details()
-  ✔ And User enters billing details and delivery details                 # StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details()
-User is on billing section
-User is on billing section
-User is on payment method section
-User is on payment method section
-User is on confirm order section
-User is on confirm order section
   ✔ And User enters delivery method and payment method and confirm order # StepDefinitions.CheckoutSteps.user_enters_delivery_method_and_payment_method_and_confirm_order()
-  ✔ And User enters delivery method and payment method and confirm order # StepDefinitions.CheckoutSteps.user_enters_delivery_method_and_payment_method_and_confirm_order()
-Order confirmation message displayed
-  ✔ Then User get the order confirmation message                         # StepDefinitions.CheckoutSteps.user_get_the_order_confirmation_message()
 Order confirmation message displayed
   ✔ Then User get the order confirmation message                         # StepDefinitions.CheckoutSteps.user_get_the_order_confirmation_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;](20)" classname="Runners.OpenCartRunner" time="0.034">
-    <system-out><![CDATA[
-Scenario: Verify logout functionality                               # src/test/resources/Features/Feature6_Logout.feature:3
-Launching Browser: chrome | Thread ID: 31
+  <testcase name="runScenario[&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;](20)" classname="Runners.OpenCartRunner" time="20.624">
+    <failure message="Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),&apos;Delivery Details&apos;)], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Delivery Details&apos;)]&quot;}.&#10;(tried for 15 seconds with 500 milliseconds interval)&#10;Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61467}, goog:processID: 34804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61467/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fc448a12fce379b709a6dd49b812e9c5" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),'Delivery Details')], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Delivery Details')]"}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61467}, goog:processID: 34804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61467/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc448a12fce379b709a6dd49b812e9c5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.CheckoutPage.checkDeliveryDetails(CheckoutPage.java:43)
+	at StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details(CheckoutSteps.java:57)
+	at ✽.User enters billing details and delivery details(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature5_Checkout.feature:7)
+]]></failure>
+    <system-out><![CDATA[  ✘ And User enters billing details and delivery details                 # StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details()
+        org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),'Delivery Details')], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Delivery Details')]"}.
+        (tried for 15 seconds with 500 milliseconds interval)
+        Build info: version: '4.44.0', revision: 'da2039b'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61467}, goog:processID: 34804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61467/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Session ID: fc448a12fce379b709a6dd49b812e9c5
+        	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+        	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+        	at Pages.CheckoutPage.checkDeliveryDetails(CheckoutPage.java:43)
+        	at StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details(CheckoutSteps.java:57)
+        	at ✽.User enters billing details and delivery details(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature5_Checkout.feature:7)
+  ↷ And User enters delivery method and payment method and confirm order # StepDefinitions.CheckoutSteps.user_enters_delivery_method_and_payment_method_and_confirm_order()
+  ↷ Then User get the order confirmation message                         # StepDefinitions.CheckoutSteps.user_get_the_order_confirmation_message()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;](21)" classname="Runners.OpenCartRunner" time="8.341">
+  <testcase name="runScenario[&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;](21)" classname="Runners.OpenCartRunner" time="4.523">
     <system-out><![CDATA[
 Scenario: Verify logout functionality                               # src/test/resources/Features/Feature6_Logout.feature:3
 Launching Browser: edge | Thread ID: 32
 Selected My account tab
-Selected My account tab
 Selected login option
-Entered email
-Selected login option
-Entered password
 Entered email
 Entered password
 Selected login button
   ✔ Given User is on home page and logins to account                # StepDefinitions.LogoutSteps.user_is_on_home_page_and_logins_to_account()
-Selected login button
-  ✔ Given User is on home page and logins to account                # StepDefinitions.LogoutSteps.user_is_on_home_page_and_logins_to_account()
-  ✔ When Select My Account Option and click on Logout option        # StepDefinitions.LogoutSteps.select_my_account_option_and_click_on_logout_option()
   ✔ When Select My Account Option and click on Logout option        # StepDefinitions.LogoutSteps.select_my_account_option_and_click_on_logout_option()
 User Logged out successfully
   ✔ And User logged out from account and verify session termination # StepDefinitions.LogoutSteps.user_logged_out_from_account_and_verify_session_termination()
-User Logged out successfully
-  ✔ And User logged out from account and verify session termination # StepDefinitions.LogoutSteps.user_logged_out_from_account_and_verify_session_termination()
-User successfully navigated to homepage after logout
-  ✔ Then User click continue to redirect to homepage                # StepDefinitions.LogoutSteps.user_click_continue_to_redirect_to_homepage()
 User successfully navigated to homepage after logout
   ✔ Then User click continue to redirect to homepage                # StepDefinitions.LogoutSteps.user_click_continue_to_redirect_to_homepage()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;](21)" classname="Runners.OpenCartRunner" time="8.639"/>
+  <testcase name="runScenario[&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;](21)" classname="Runners.OpenCartRunner" time="7.88">
+    <system-out><![CDATA[
+Scenario: Verify logout functionality                               # src/test/resources/Features/Feature6_Logout.feature:3
+Launching Browser: chrome | Thread ID: 31
+Selected My account tab
+Selected login option
+Entered email
+Entered password
+Selected login button
+  ✔ Given User is on home page and logins to account                # StepDefinitions.LogoutSteps.user_is_on_home_page_and_logins_to_account()
+  ✔ When Select My Account Option and click on Logout option        # StepDefinitions.LogoutSteps.select_my_account_option_and_click_on_logout_option()
+User Logged out successfully
+  ✔ And User logged out from account and verify session termination # StepDefinitions.LogoutSteps.user_logged_out_from_account_and_verify_session_termination()
+User successfully navigated to homepage after logout
+  ✔ Then User click continue to redirect to homepage                # StepDefinitions.LogoutSteps.user_click_continue_to_redirect_to_homepage()
+]]></system-out>
+  </testcase>
 </testsuite>

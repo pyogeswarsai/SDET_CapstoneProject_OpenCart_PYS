@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OpenCart_Suite" class="navigator-link">
-              <span class="suite-name border-passed">OpenCart Suite</span>
+              <span class="suite-name border-failed">OpenCart Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">42 methods,   42 passed</span>
+                    <span class="method-stats">42 methods, 1 failed,   41 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OpenCart_Suite" class="hide-methods failed suite-OpenCart_Suite"> (hide)</a> <!-- hide-methods failed suite-OpenCart_Suite -->
+                      <a href="#" panel-name="suite-OpenCart_Suite" class="show-methods failed suite-OpenCart_Suite"> (show)</a> <!-- show-methods failed suite-OpenCart_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-OpenCart_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OpenCart_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,47 +117,12 @@
                     <div class="method-list-content passed suite-OpenCart_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">runScenario("Verify logout functionality", "Open Cart Logout Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Verify empty cart message", "Open Cart cart Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Update product quantity", "Open Cart cart Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with blank credentials", "Open Cart Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,41 +133,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Add product to cart", "Open Cart cart Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with valid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify navigation to Registration page", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register user with valid Details", "Open Cart Registration Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -203,72 +147,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Remove product from cart", "Open Cart cart Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product with empty field", "Open Cart Product Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register user with valid Details", "Open Cart Registration Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Verify empty cart message", "Open Cart cart Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -278,7 +157,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Add product to cart", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Update product quantity", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Verify empty cart message", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -288,7 +187,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">runScenario("Verify logout functionality", "Open Cart Logout Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register user with valid Details", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -298,7 +217,77 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">runScenario("Verify logout functionality", "Open Cart Logout Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Verify empty cart message", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register user with valid Details", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product with empty field", "Open Cart Product Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with valid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with blank credentials", "Open Cart Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify navigation to Registration page", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">runScenario("Verify logout functionality", "Open Cart Logout Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Remove product from cart", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Add product to cart", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">runScenario("Search Product using valid keyword", "Open Cart Product Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -309,6 +298,26 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;)">runScenario("Update product quantity", "Open Cart cart Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">runScenario("Register User with existing email", "Open Cart Registration Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Suite" title="Runners.OpenCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">runScenario("Login with invalid email and password", "Open Cart Login Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OpenCart_Suite -->
@@ -323,6 +332,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OpenCart_Suite" class="panel OpenCart_Suite">
+          <div class="suite-OpenCart_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runners.OpenCartRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">
+                  </a> <!-- runScenario("Verify Checkout functionality", "Open Cart Checkout Feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Checkout functionality","Open Cart Checkout Feature")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),&apos;Delivery Details&apos;)], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Delivery Details&apos;)]&quot;}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61467}, goog:processID: 34804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61467/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc448a12fce379b709a6dd49b812e9c5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.CheckoutPage.checkDeliveryDetails(CheckoutPage.java:43)
+	at StepDefinitions.CheckoutSteps.user_enters_billing_details_and_delivery_details(CheckoutSteps.java:57)
+	at ✽.User enters billing details and delivery details(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature5_Checkout.feature:7)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OpenCart_Suite-class-failed -->
           <div class="suite-OpenCart_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -331,26 +372,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product using invalid keyword", "Open Cart Product Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product using invalid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">
-                  </a> <!-- runScenario("Verify logout functionality", "Open Cart Logout Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify logout functionality","Open Cart Logout Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
                   </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
                   <span class="method-name">runScenario</span>
@@ -361,60 +382,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
+                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">
-                  </a> <!-- runScenario("Verify empty cart message", "Open Cart cart Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify empty cart message","Open Cart cart Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Verify password mismatch validation", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify password mismatch validation","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;)">
-                  </a> <!-- runScenario("Update product quantity", "Open Cart cart Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Update product quantity","Open Cart cart Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;)">
-                  </a> <!-- runScenario("Login with blank credentials", "Open Cart Login Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with blank credentials","Open Cart Login Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product using invalid keyword", "Open Cart Product Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product using invalid keyword","Open Cart Product Module")</span>
+                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -435,76 +406,6 @@
                   </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">
-                  </a> <!-- runScenario("Add product to cart", "Open Cart cart Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add product to cart","Open Cart cart Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;)">
-                  </a> <!-- runScenario("Login with valid email and password", "Open Cart Login Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with valid email and password","Open Cart Login Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Verify mandatory field validation messages", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify mandatory field validation messages","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Verify navigation to Registration page", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify navigation to Registration page","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">
-                  </a> <!-- runScenario("Verify Checkout functionality", "Open Cart Checkout Feature") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Checkout functionality","Open Cart Checkout Feature")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Register user with valid Details", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register user with valid Details","Open Cart Registration Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -531,140 +432,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
-                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
-                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;)">
-                  </a> <!-- runScenario("Remove product from cart", "Open Cart cart Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Remove product from cart","Open Cart cart Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">
                   </a> <!-- runScenario("Search Product using invalid keyword", "Open Cart Product Module") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search Product using invalid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
-                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;)">
-                  </a> <!-- runScenario("Search Product with empty field", "Open Cart Product Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Product with empty field","Open Cart Product Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">
-                  </a> <!-- runScenario("Verify Checkout functionality", "Open Cart Checkout Feature") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Checkout functionality","Open Cart Checkout Feature")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Verify mandatory field validation messages", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify mandatory field validation messages","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Register user with valid Details", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register user with valid Details","Open Cart Registration Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">
-                  </a> <!-- runScenario("Verify empty cart message", "Open Cart cart Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify empty cart message","Open Cart cart Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -681,10 +452,50 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">
-                  </a> <!-- runScenario("Verify password mismatch validation", "Open Cart Registration Module") -->
+                  <a name="runScenario(&quot;Verify Checkout functionality&quot;, &quot;Open Cart Checkout Feature&quot;)">
+                  </a> <!-- runScenario("Verify Checkout functionality", "Open Cart Checkout Feature") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify password mismatch validation","Open Cart Registration Module")</span>
+                  <span class="parameters">("Verify Checkout functionality","Open Cart Checkout Feature")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">
+                  </a> <!-- runScenario("Add product to cart", "Open Cart cart Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add product to cart","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Update product quantity&quot;, &quot;Open Cart cart Module&quot;)">
+                  </a> <!-- runScenario("Update product quantity", "Open Cart cart Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Update product quantity","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">
+                  </a> <!-- runScenario("Verify empty cart message", "Open Cart cart Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify empty cart message","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
+                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -701,10 +512,50 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">
-                  </a> <!-- runScenario("Verify logout functionality", "Open Cart Logout Module") -->
+                  <a name="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Register user with valid Details", "Open Cart Registration Module") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify logout functionality","Open Cart Logout Module")</span>
+                  <span class="parameters">("Register user with valid Details","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Verify mandatory field validation messages", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify mandatory field validation messages","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Verify password mismatch validation", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify password mismatch validation","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product using invalid keyword", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product using invalid keyword","Open Cart Product Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -721,10 +572,150 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">
+                  </a> <!-- runScenario("Verify logout functionality", "Open Cart Logout Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify logout functionality","Open Cart Logout Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
+                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify empty cart message&quot;, &quot;Open Cart cart Module&quot;)">
+                  </a> <!-- runScenario("Verify empty cart message", "Open Cart cart Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify empty cart message","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify password mismatch validation&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Verify password mismatch validation", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify password mismatch validation","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register user with valid Details&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Register user with valid Details", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register user with valid Details","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product with empty field&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product with empty field", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product with empty field","Open Cart Product Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with valid email and password&quot;, &quot;Open Cart Login Module&quot;)">
+                  </a> <!-- runScenario("Login with valid email and password", "Open Cart Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with valid email and password","Open Cart Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with blank credentials&quot;, &quot;Open Cart Login Module&quot;)">
+                  </a> <!-- runScenario("Login with blank credentials", "Open Cart Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with blank credentials","Open Cart Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to Registration page&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Verify navigation to Registration page", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to Registration page","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify logout functionality&quot;, &quot;Open Cart Logout Module&quot;)">
+                  </a> <!-- runScenario("Verify logout functionality", "Open Cart Logout Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify logout functionality","Open Cart Logout Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product using invalid keyword&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product using invalid keyword", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product using invalid keyword","Open Cart Product Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Remove product from cart&quot;, &quot;Open Cart cart Module&quot;)">
+                  </a> <!-- runScenario("Remove product from cart", "Open Cart cart Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Remove product from cart","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Add product to cart&quot;, &quot;Open Cart cart Module&quot;)">
                   </a> <!-- runScenario("Add product to cart", "Open Cart cart Module") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add product to cart","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Product using valid keyword&quot;, &quot;Open Cart Product Module&quot;)">
+                  </a> <!-- runScenario("Search Product using valid keyword", "Open Cart Product Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Product using valid keyword","Open Cart Product Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -745,6 +736,46 @@
                   </a> <!-- runScenario("Update product quantity", "Open Cart cart Module") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Update product quantity","Open Cart cart Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify mandatory field validation messages&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Verify mandatory field validation messages", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify mandatory field validation messages","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Open Cart Registration Module&quot;)">
+                  </a> <!-- runScenario("Register User with existing email", "Open Cart Registration Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register User with existing email","Open Cart Registration Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with invalid email and password&quot;, &quot;Open Cart Login Module&quot;)">
+                  </a> <!-- runScenario("Login with invalid email and password", "Open Cart Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with invalid email and password","Open Cart Login Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -825,176 +856,176 @@ data.addRows(42);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runners.OpenCartRunner')
-data.setCell(0, 3, 19835);
+data.setCell(0, 3, 27218);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runners.OpenCartRunner')
-data.setCell(1, 3, 18936);
+data.setCell(1, 3, 14495);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Runners.OpenCartRunner')
-data.setCell(2, 3, 18417);
+data.setCell(2, 3, 14097);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'Runners.OpenCartRunner')
-data.setCell(3, 3, 17892);
+data.setCell(3, 3, 11059);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'Runners.OpenCartRunner')
-data.setCell(4, 3, 16076);
+data.setCell(4, 3, 10009);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'Runners.OpenCartRunner')
-data.setCell(5, 3, 15971);
+data.setCell(5, 3, 9283);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'Runners.OpenCartRunner')
-data.setCell(6, 3, 11596);
+data.setCell(6, 3, 7894);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'Runners.OpenCartRunner')
-data.setCell(7, 3, 11450);
+data.setCell(7, 3, 7855);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'Runners.OpenCartRunner')
-data.setCell(8, 3, 10535);
+data.setCell(8, 3, 6735);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'Runners.OpenCartRunner')
-data.setCell(9, 3, 9419);
+data.setCell(9, 3, 6470);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'Runners.OpenCartRunner')
-data.setCell(10, 3, 9262);
+data.setCell(10, 3, 5421);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'Runners.OpenCartRunner')
-data.setCell(11, 3, 9215);
+data.setCell(11, 3, 5346);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'Runners.OpenCartRunner')
-data.setCell(12, 3, 9160);
+data.setCell(12, 3, 5284);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'Runners.OpenCartRunner')
-data.setCell(13, 3, 9074);
+data.setCell(13, 3, 5279);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'Runners.OpenCartRunner')
-data.setCell(14, 3, 8807);
+data.setCell(14, 3, 5257);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'Runners.OpenCartRunner')
-data.setCell(15, 3, 8735);
+data.setCell(15, 3, 5133);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'Runners.OpenCartRunner')
-data.setCell(16, 3, 8711);
+data.setCell(16, 3, 5125);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
 data.setCell(17, 2, 'Runners.OpenCartRunner')
-data.setCell(17, 3, 8700);
+data.setCell(17, 3, 5084);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
 data.setCell(18, 2, 'Runners.OpenCartRunner')
-data.setCell(18, 3, 8644);
+data.setCell(18, 3, 5074);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
 data.setCell(19, 2, 'Runners.OpenCartRunner')
-data.setCell(19, 3, 8549);
+data.setCell(19, 3, 4886);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'runScenario')
 data.setCell(20, 2, 'Runners.OpenCartRunner')
-data.setCell(20, 3, 8518);
+data.setCell(20, 3, 4853);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'runScenario')
 data.setCell(21, 2, 'Runners.OpenCartRunner')
-data.setCell(21, 3, 8375);
+data.setCell(21, 3, 4552);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'runScenario')
 data.setCell(22, 2, 'Runners.OpenCartRunner')
-data.setCell(22, 3, 8097);
+data.setCell(22, 3, 4548);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'runScenario')
 data.setCell(23, 2, 'Runners.OpenCartRunner')
-data.setCell(23, 3, 7941);
+data.setCell(23, 3, 4522);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'runScenario')
 data.setCell(24, 2, 'Runners.OpenCartRunner')
-data.setCell(24, 3, 7885);
+data.setCell(24, 3, 4268);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'runScenario')
 data.setCell(25, 2, 'Runners.OpenCartRunner')
-data.setCell(25, 3, 7884);
+data.setCell(25, 3, 4067);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'runScenario')
 data.setCell(26, 2, 'Runners.OpenCartRunner')
-data.setCell(26, 3, 7844);
+data.setCell(26, 3, 4049);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'runScenario')
 data.setCell(27, 2, 'Runners.OpenCartRunner')
-data.setCell(27, 3, 7843);
+data.setCell(27, 3, 4024);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'runScenario')
 data.setCell(28, 2, 'Runners.OpenCartRunner')
-data.setCell(28, 3, 7745);
+data.setCell(28, 3, 4009);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'runScenario')
 data.setCell(29, 2, 'Runners.OpenCartRunner')
-data.setCell(29, 3, 7528);
+data.setCell(29, 3, 4005);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'runScenario')
 data.setCell(30, 2, 'Runners.OpenCartRunner')
-data.setCell(30, 3, 7442);
+data.setCell(30, 3, 3937);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'runScenario')
 data.setCell(31, 2, 'Runners.OpenCartRunner')
-data.setCell(31, 3, 7425);
+data.setCell(31, 3, 3919);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'runScenario')
 data.setCell(32, 2, 'Runners.OpenCartRunner')
-data.setCell(32, 3, 7422);
+data.setCell(32, 3, 3853);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'runScenario')
 data.setCell(33, 2, 'Runners.OpenCartRunner')
-data.setCell(33, 3, 7231);
+data.setCell(33, 3, 3836);
 data.setCell(34, 0, 34)
 data.setCell(34, 1, 'runScenario')
 data.setCell(34, 2, 'Runners.OpenCartRunner')
-data.setCell(34, 3, 7207);
+data.setCell(34, 3, 3835);
 data.setCell(35, 0, 35)
 data.setCell(35, 1, 'runScenario')
 data.setCell(35, 2, 'Runners.OpenCartRunner')
-data.setCell(35, 3, 7052);
+data.setCell(35, 3, 3825);
 data.setCell(36, 0, 36)
 data.setCell(36, 1, 'runScenario')
 data.setCell(36, 2, 'Runners.OpenCartRunner')
-data.setCell(36, 3, 6970);
+data.setCell(36, 3, 3812);
 data.setCell(37, 0, 37)
 data.setCell(37, 1, 'runScenario')
 data.setCell(37, 2, 'Runners.OpenCartRunner')
-data.setCell(37, 3, 6940);
+data.setCell(37, 3, 3361);
 data.setCell(38, 0, 38)
 data.setCell(38, 1, 'runScenario')
 data.setCell(38, 2, 'Runners.OpenCartRunner')
-data.setCell(38, 3, 6469);
+data.setCell(38, 3, 3343);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'runScenario')
 data.setCell(39, 2, 'Runners.OpenCartRunner')
-data.setCell(39, 3, 5980);
+data.setCell(39, 3, 3109);
 data.setCell(40, 0, 40)
 data.setCell(40, 1, 'runScenario')
 data.setCell(40, 2, 'Runners.OpenCartRunner')
-data.setCell(40, 3, 5788);
+data.setCell(40, 3, 2657);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'runScenario')
 data.setCell(41, 2, 'Runners.OpenCartRunner')
-data.setCell(41, 3, 5519);
+data.setCell(41, 3, 2459);
 window.suiteTableData['OpenCart_Suite']= { tableData: data, tableDiv: 'times-div-OpenCart_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-OpenCart_Suite">
               </div> <!-- times-div-OpenCart_Suite -->
             </div> <!-- times-div -->
@@ -1031,187 +1062,189 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass(org.testng.TestRunner@c03cf28)</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass(org.testng.TestRunner@1329eff)</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">921 ms</span>
+                <span class="method-start">1008 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">921 ms</span>
+                <span class="method-start">1008 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with invalid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">12378 ms</span>
+                <span class="method-start">8867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with invalid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">12519 ms</span>
+                <span class="method-start">10293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with invalid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">21541 ms</span>
+                <span class="method-start">13402 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with invalid email and password", "Open Cart Login Module")</span>
-                <span class="method-start">21782 ms</span>
+                <span class="method-start">13415 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with blank credentials", "Open Cart Login Module")</span>
-                <span class="method-start">29640 ms</span>
+                <span class="method-start">17238 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with blank credentials", "Open Cart Login Module")</span>
-                <span class="method-start">29668 ms</span>
+                <span class="method-start">17336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify navigation to Registration page", "Open Cart Registration Module")</span>
-                <span class="method-start">36721 ms</span>
+                <span class="method-start">21287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify navigation to Registration page", "Open Cart Registration Module")</span>
-                <span class="method-start">37169 ms</span>
+                <span class="method-start">21404 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register user with valid Details", "Open Cart Registration Module")</span>
-                <span class="method-start">42510 ms</span>
+                <span class="method-start">23746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register user with valid Details", "Open Cart Registration Module")</span>
-                <span class="method-start">42688 ms</span>
+                <span class="method-start">24061 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register User with existing email", "Open Cart Registration Module")</span>
-                <span class="method-start">50630 ms</span>
+                <span class="method-start">30481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register User with existing email", "Open Cart Registration Module")</span>
-                <span class="method-start">51222 ms</span>
+                <span class="method-start">30533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register User with existing email", "Open Cart Registration Module")</span>
-                <span class="method-start">58058 ms</span>
+                <span class="method-start">35336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register User with existing email", "Open Cart Registration Module")</span>
-                <span class="method-start">58163 ms</span>
+                <span class="method-start">35419 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</span>
-                <span class="method-start">65586 ms</span>
+                <span class="method-start">38697 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify mandatory field validation messages", "Open Cart Registration Module")</span>
-                <span class="method-start">65903 ms</span>
+                <span class="method-start">38762 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</span>
-                <span class="method-start">71884 ms</span>
+                <span class="method-start">42511 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify password mismatch validation", "Open Cart Registration Module")</span>
-                <span class="method-start">72056 ms</span>
+                <span class="method-start">42599 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using valid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">79027 ms</span>
+                <span class="method-start">46336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using valid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">79327 ms</span>
+                <span class="method-start">46452 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using valid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">86535 ms</span>
+                <span class="method-start">51470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using valid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">87835 ms</span>
+                <span class="method-start">51710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">97071 ms</span>
+                <span class="method-start">56818 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">97256 ms</span>
+                <span class="method-start">56996 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">104304 ms</span>
+                <span class="method-start">61902 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product using invalid keyword", "Open Cart Product Module")</span>
-                <span class="method-start">105002 ms</span>
+                <span class="method-start">62072 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product with empty field", "Open Cart Product Module")</span>
-                <span class="method-start">123241 ms</span>
+                <span class="method-start">65926 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search Product with empty field", "Open Cart Product Module")</span>
-                <span class="method-start">124838 ms</span>
+                <span class="method-start">66009 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Add product to cart", "Open Cart cart Module")</span>
-                <span class="method-start">132460 ms</span>
+                <span class="method-start">69936 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Add product to cart", "Open Cart cart Module")</span>
-                <span class="method-start">132723 ms</span>
+                <span class="method-start">70016 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update product quantity", "Open Cart cart Module")</span>
-                <span class="method-start">141460 ms</span>
+                <span class="method-start">75061 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update product quantity", "Open Cart cart Module")</span>
-                <span class="method-start">141535 ms</span>
+                <span class="method-start">75295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Remove product from cart", "Open Cart cart Module")</span>
-                <span class="method-start">149379 ms</span>
+                <span class="method-start">79331 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Remove product from cart", "Open Cart cart Module")</span>
-                <span class="method-start">150010 ms</span>
+                <span class="method-start">79849 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify empty cart message", "Open Cart cart Module")</span>
-                <span class="method-start">158081 ms</span>
+                <span class="method-start">85272 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify empty cart message", "Open Cart cart Module")</span>
-                <span class="method-start">158529 ms</span>
+                <span class="method-start">89340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</span>
-                <span class="method-start">176423 ms</span>
+                <span class="method-start">99370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify Checkout functionality", "Open Cart Checkout Feature")</span>
-                <span class="method-start">176498 ms</span>
+                <span class="method-start">103837 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify logout functionality", "Open Cart Logout Module")</span>
-                <span class="method-start">192470 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify logout functionality", "Open Cart Logout Module")</span>
-                <span class="method-start">192500 ms</span>
+                <span class="method-start">110431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">200860 ms</span>
+                <span class="method-start">114957 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify logout functionality", "Open Cart Logout Module")</span>
+                <span class="method-start">131055 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">201144 ms</span>
+                <span class="method-start">138949 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
