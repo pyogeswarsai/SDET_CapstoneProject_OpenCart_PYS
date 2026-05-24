@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Edge Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 24 12:35:05 IST 2026</td>
+<td>Started on:</td><td>Sun May 24 15:37:04 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>114 seconds (114998 ms)</td>
+<tr><td>Total time:</td><td>132 seconds (132466 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,103 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update product quantity", "Open Cart cart Module"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=148.0.3967.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aa5ce606b9c12b8e8fbb9ae0891ed68e, getElementAttribute {id=f.A0C0469EB574FA4EEA705AE4EFF7D972.d.5EFE7EA3DD5B1463719240244E1F1CC6.e.133, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.83, fedcm:accounts: true, goog:processID: 18068, ms:edgeOptions: {debuggerAddress: localhost:50646}, msedge: {msedgedriverVersion: 148.0.3967.83 (2db6d3cb8b2d..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50646/devtoo..., se:cdpVersion: 148.0.3967.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (aa5ce606b9c12b8e8fbb9ae0891ed68e)] -&gt; xpath: //input[@type=&apos;text&apos; and @size=&apos;1&apos;]]
+Session ID: aa5ce606b9c12b8e8fbb9ae0891ed68e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:151)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1395)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:1027)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:1021)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	at Pages.CartPage.updatedPriceQuantityCheck(CartPage.java:63)
+	at StepDefinitions.CartSteps.verify_price_changes_and_quantity_updated(CartSteps.java:80)
+	at ✽.Verify price changes and quantity updated(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature4_Cart.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1794340186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1794340186'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=148.0.3967.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aa5ce606b9c12b8e8fbb9ae0891ed68e, getElementAttribute {id=f.A0C0469EB574FA4EEA705AE4EFF7D972.d.5EFE7EA3DD5B1463719240244E1F1CC6.e.133, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.83, fedcm:accounts: true, goog:processID: 18068, ms:edgeOptions: {debuggerAddress: localhost:50646}, msedge: {msedgedriverVersion: 148.0.3967.83 (2db6d3cb8b2d..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50646/devtoo..., se:cdpVersion: 148.0.3967.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (aa5ce606b9c12b8e8fbb9ae0891ed68e)] -&gt; xpath: //input[@type=&apos;text&apos; and @size=&apos;1&apos;]]
+Session ID: aa5ce606b9c12b8e8fbb9ae0891ed68e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:151)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1395)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:1027)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:1021)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	at Pages.CartPage.updatedPriceQuantityCheck(CartPage.java:63)
+	at StepDefinitions.CartSteps.verify_price_changes_and_quantity_updated(CartSteps.java:80)
+	at ✽.Verify price changes and quantity updated(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature4_Cart.feature:13)
+</pre></div></td>
+<td>5</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Checkout functionality", "Open Cart Checkout Feature"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),&apos;Delivery Method&apos;)], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Delivery Method&apos;)]&quot;}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.83, fedcm:accounts: true, goog:processID: 17752, ms:edgeOptions: {debuggerAddress: localhost:61801}, msedge: {msedgedriverVersion: 148.0.3967.83 (2db6d3cb8b2d..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61801/devtoo..., se:cdpVersion: 148.0.3967.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e2ae984cc54c8045c3d9fcbd78af1cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.CheckoutPage.checkDeliveryMethod(CheckoutPage.java:50)
+	at StepDefinitions.CheckoutSteps.user_enters_delivery_method_and_payment_method_and_confirm_order(CheckoutSteps.java:63)
+	at ✽.User enters delivery method and payment method and confirm order(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature5_Checkout.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace978413498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace978413498'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //a[contains(text(),&apos;Delivery Method&apos;)], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Delivery Method&apos;)]&quot;}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.83, fedcm:accounts: true, goog:processID: 17752, ms:edgeOptions: {debuggerAddress: localhost:61801}, msedge: {msedgedriverVersion: 148.0.3967.83 (2db6d3cb8b2d..., userDataDir: C:\Users\YOGESWAR\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61801/devtoo..., se:cdpVersion: 148.0.3967.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e2ae984cc54c8045c3d9fcbd78af1cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.CheckoutPage.checkDeliveryMethod(CheckoutPage.java:50)
+	at StepDefinitions.CheckoutSteps.user_enters_delivery_method_and_payment_method_and_confirm_order(CheckoutSteps.java:63)
+	at ✽.User enters delivery method and payment method and confirm order(file:///C:/Users/YOGESWAR/OneDrive/Desktop/SDET_Capstone_Project/Capstone_Project_OpenCart/CapstoneOpenCartProject/src/test/resources/Features/Feature5_Checkout.feature:8)
+</pre></div></td>
+<td>29</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,39 +173,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
-<td></td>
-<td>3</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
-<td></td>
-<td>3</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
-<td></td>
-<td>4</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
 <td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using valid keyword", "Open Cart Product Module"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
 <td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product with empty field", "Open Cart Product Module"</td>
 <td></td>
-<td>4</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove product from cart", "Open Cart cart Module"</td>
-<td></td>
 <td>5</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using invalid keyword", "Open Cart Product Module"</td>
-<td></td>
-<td>3</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
 <td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Registration page", "Open Cart Registration Module"</td>
@@ -116,54 +188,64 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Checkout functionality", "Open Cart Checkout Feature"</td>
-<td></td>
-<td>11</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart", "Open Cart cart Module"</td>
-<td></td>
-<td>5</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update product quantity", "Open Cart cart Module"</td>
-<td></td>
-<td>4</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify empty cart message", "Open Cart cart Module"</td>
-<td></td>
-<td>14</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
-<td></td>
-<td>4</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email and password", "Open Cart Login Module"</td>
-<td></td>
-<td>7</td>
-<td>Runners.OpenCartRunner@ae13544</td></tr>
-<tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register user with valid Details", "Open Cart Registration Module"</td>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using valid keyword", "Open Cart Product Module"</td>
 <td></td>
 <td>6</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mandatory field validation messages", "Open Cart Registration Module"</td>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email and password", "Open Cart Login Module"</td>
 <td></td>
-<td>3</td>
+<td>5</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify empty cart message", "Open Cart cart Module"</td>
+<td></td>
+<td>15</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart", "Open Cart cart Module"</td>
+<td></td>
+<td>6</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
+<td></td>
+<td>2</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
 <td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify password mismatch validation", "Open Cart Registration Module"</td>
 <td></td>
+<td>2</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with blank credentials", "Open Cart Login Module"</td>
+<td></td>
 <td>3</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using valid keyword", "Open Cart Product Module"</td>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register user with valid Details", "Open Cart Registration Module"</td>
+<td></td>
+<td>3</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using invalid keyword", "Open Cart Product Module"</td>
+<td></td>
+<td>4</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify logout functionality", "Open Cart Logout Module"</td>
 <td></td>
 <td>5</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mandatory field validation messages", "Open Cart Registration Module"</td>
+<td></td>
+<td>5</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
+<td></td>
+<td>2</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
 <td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product using invalid keyword", "Open Cart Product Module"</td>
@@ -171,14 +253,19 @@ function toggleAllBoxes() {
 <td>5</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with blank credentials", "Open Cart Login Module"</td>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove product from cart", "Open Cart cart Module"</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 <tr>
-<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify logout functionality", "Open Cart Logout Module"</td>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email and password", "Open Cart Login Module"</td>
 <td></td>
-<td>4</td>
+<td>3</td>
+<td>Runners.OpenCartRunner@ae13544</td></tr>
+<tr>
+<td title='Runners.OpenCartRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.OpenCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Open Cart Registration Module"</td>
+<td></td>
+<td>3</td>
 <td>Runners.OpenCartRunner@ae13544</td></tr>
 </table><p>
 </body>

@@ -11,7 +11,7 @@ public class RegistrationSteps {
 	
 	WebDriver driver = Base.BaseClass.getDriver();
 	
-	String uniqueEmail = "yogeswar_2805" + Base.BaseClass.getBrowserSuffix() + "@gmail.com";
+	String uniqueEmail = "yogeswar_1419" + Base.BaseClass.getBrowserSuffix() + "@gmail.com";
 	
 	RegistrationPage rp = new RegistrationPage(driver);
 	//User Navigated to registration page
