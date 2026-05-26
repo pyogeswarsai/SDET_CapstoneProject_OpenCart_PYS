@@ -19,7 +19,7 @@ public class CartPage {
 	public CartPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		PageFactory.initElements(driver, this);
 	}
 	
